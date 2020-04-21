@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+  border: solid 1px black;
+}
+
+td {
+  border: solid 1px gray;
+}
+
+th:first-child, td:first-child {
+  border: none;
+}
+
+button {
+  background-color: rgb(3, 94, 173);
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+div.total {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+div.total > p {
+  margin: 0;
+  padding: 10px;
+}
+
+
+div.summary {
+  display: flex;
+  width: 500px;
+}
+div.summary > p {
+  font-weight: bold;
+  margin-right: 30px;
+}
