@@ -79,7 +79,9 @@ export default class Table extends React.Component {
   }
 
   newId() {
-    return Math.max(this.state.tradelines.filter((row) => row.id)) + 1;
+    const ids = this.state.tradelines.map((row) => row.id);
+  
+    return Math.max(...ids) + 1;
   }
 
   allSelected() {

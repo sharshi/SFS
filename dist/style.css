@@ -42,3 +42,13 @@ div.summary > p {
   font-weight: bold;
   margin-right: 30px;
 }
+
+form {
+  padding: 20px;
+  width: 500px;
+  border: solid 1px gray;
+}
+
+form > label {
+  display: block;
+}
