@@ -6,10 +6,12 @@ export default class Table extends React.Component {
   constructor(props) {
     super(props);
 
+    // initial state
     this.state = {
       loaded: false
     };
 
+    // bindings
     this.addDebt = this.addDebt.bind(this);
     this.removeDebt = this.removeDebt.bind(this);
     this.selectAll = this.selectAll.bind(this);
@@ -37,11 +39,6 @@ export default class Table extends React.Component {
 
     const total = tradelines.reduce((sum, val) => sum + val["balance"], 0);
     return `$${total.toFixed(2)}`;
-  }
-
-  handleSelect(e) {
-    //set update row data as selected
-    debugger
   }
 
   numRows() {
